@@ -1,0 +1,14 @@
+{
+  "name": "4-in-a-line",
+  "version": "1.0.0",
+  "description": "Connect Four game in vanilla JavaScript with Vite",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

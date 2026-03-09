@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/game4inarow.css"/>
+    <title>Connect Four</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="title">Connect <span class="title-four">Four</span></h1>
+        <div class="turn-indicator" id="turnIndicator">
+            <span class="turn-dot blue-dot"></span>
+            <span id="turnText">Blue's turn</span>
+        </div>
+        <div class="board-wrapper">
+            <div class="board" id="gameBoard"></div>
+        </div>
+    </div>
+
+    <!-- Win overlay modal -->
+    <div class="overlay" id="winOverlay">
+        <div class="modal">
+            <div class="modal-icon" id="modalIcon">🏆</div>
+            <h2 class="modal-title" id="modalTitle">Player wins!</h2>
+            <p class="modal-subtitle">Game will restart with a fresh board.</p>
+            <button class="modal-btn" id="modalBtn">Play Again</button>
+        </div>
+    </div>
+
+    <script type="module" src="/js/Controller.js"></script>
+</body>
+</html>
